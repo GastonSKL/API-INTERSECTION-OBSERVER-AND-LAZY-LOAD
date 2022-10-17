@@ -1,0 +1,81 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: rgb(230, 221, 229);
+ }
+
+ .publicacion{
+    padding: 1em 0 0 1em;
+    opacity: 0;
+    animation: aparecer 1s forwards .5s;
+ }
+
+ .publicacion h3{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgb(194, 152, 233);
+    width: 95%;
+ }
+
+ .publicacion p{
+    margin-bottom: .7em;
+ }
+
+ .comentarios{
+    width: 100%;
+    margin-bottom: .8em;
+ }
+
+ .comentario{
+    width: 75%;
+    height: 4em;
+    border: none;
+    border-radius: .8em;
+    text-align: center;
+    cursor: pointer;
+ }
+
+ .comentario:focus{
+    outline: none;
+    text-align: left;
+    
+ }
+
+ .enviar{
+    width: 20%;
+    height: 4em;
+    border-radius: .8em;
+    margin-left: .5em;
+    border: none;
+    background-color: rgb(194, 152, 233);
+    font-weight: 700;
+    letter-spacing: .1em;
+
+ }
+
+ .enviar:hover{
+    background-color: rgb(161, 90, 228);
+    color: white;
+    box-shadow: .3em .3em 1em black;
+ }
+
+ .no-more{
+   text-align: center;
+   font-weight: 700;
+   color: rgb(95, 93, 93);
+   margin: 1em 0;
+ }
+
+ @keyframes aparecer {
+   from {
+      opacity: 0;
+   }to{
+      opacity: 1;
+   }
+ }
